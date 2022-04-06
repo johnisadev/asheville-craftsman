@@ -28,18 +28,6 @@ export default function Navbar(props) {
         </div>
       </div>
     </nav>
-
-    // <nav
-    //   className=" sticky top-0 p-10 z-10 w-full mb-5 backdrop-blur-md"
-    //   {...props}
-    // >
-    //   <div className="md:flex">
-    //     <h1 className="text-3xl text-center md:w-1/2">Asheville Craftsman</h1>
-    //     <div className="flex justify-between items-center md:mx-28 md:w-1/2">
-
-    //     </div>
-    //   </div>
-    // </nav>
   );
 }
 

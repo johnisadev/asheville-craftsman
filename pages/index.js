@@ -3,6 +3,9 @@ import { commerce } from '../lib/commerce';
 import React from "react";
 import Head from "next/head";
 
+import Hero from '../components/Hero';
+import FeaturedSection from '../components/FeaturedSection';
+
 export async function getStaticProps() {
 
     const { data } = await commerce.products.list();
@@ -21,7 +24,8 @@ export default function HomePage({ products }) {
 
     return (
         <>
-            <h1>HomePage</h1>
+            <Hero />
+            <FeaturedSection />
             <ProductGrid products={products} className="h-112 md:h-96 xl:h-112" />
         </>
     )
