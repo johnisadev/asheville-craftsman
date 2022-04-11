@@ -3,10 +3,11 @@ import Link from "next/link";
 
 
 export default function Product({ media, name, permalink, price }) {
+    console.log(media)
     return (
         <Link href={`/products/${permalink}`}>
             <a className="">
-                {
+                { 
                     media?.source && (
                         <div className="">
                             <Image

@@ -11,6 +11,7 @@ export async function getStaticProps() {
     const { data } = await commerce.products.list();
   
     const products = data.filter(({ active }) => active);
+    console.log(products)
   
     return {
       props: {
@@ -18,15 +19,15 @@ export async function getStaticProps() {
       },
       revalidate: 60,
     };
-  }
+}
 
 export default function HomePage({ products }) {
 
     return (
         <>
             <Hero />
-            <FeaturedSection />
-            <ProductGrid products={products} className="h-112 md:h-96 xl:h-112" />
+            <FeaturedSection products={products} category="Kitchen" />
+            <FeaturedSection products={products} category="Home Decor" />
         </>
     )
 }
