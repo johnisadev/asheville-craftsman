@@ -6,7 +6,7 @@ import Navbar from "../Navbar";
 export default function Main({ children }) {
   return (
     <>
-      <main className=" bg-slate-100 h-screen">
+      <main className="">
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Asheville Craftsman - Store</title>

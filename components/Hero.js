@@ -4,7 +4,7 @@ import HeroImage from "./MountainHero.svg"
 
 export default function Hero() {
   return (
-    <section className="mt-20 md:flex md:flex-row">
+    <section className=" md:flex md:flex-row">
       <div className="flex flex-col justify-center items-center md:w-2/5">
         <h2 className="font-serif text-5xl text-indigo-900  mb-4 text-center md:self-start md:text-left">
           Quality handmade wooden crafts made in Asheville, NC.
