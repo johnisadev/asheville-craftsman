@@ -19,7 +19,7 @@ export default function ProductGrid({ categories, ...props }) {
                 height={"300px"}
                 className="shadow-lg rounded-lg"
                 />
-                <span className="flex justify-self-center">{category.name}</span>
+                <span className="flex">{category.name}</span>
             </a>
           </Link>
         </div>
